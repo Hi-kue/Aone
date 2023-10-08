@@ -30,20 +30,20 @@ Please read this documentation before starting the project. This documentation w
 
 THis documentation is used to understand the various configurations done for this project.
 As of now, package.json is configured with the following packages:
-1. @tailwindcss/forms
-2. @tailwindcss/typography
-3. @material-tailwind/html
-4. animejs
-5. baffle
-6. colors
-7. dotenv
-8. ejs
-9. express
-10. http
-11. nodemon
-12. path
-13. postcss-cli
-14. three
+1. @tailwindcss/forms `v0.5.6`
+2. @tailwindcss/typography `v0.5.10`
+3. @material-tailwind/html `v2.0.0`
+4. animejs `v3.2.1`
+5. baffle `v0.3.6`
+6. colors `v1.4.0`
+7. dotenv `v16.3.1`
+8. ejs `v3.1.9`
+9. express `v4.18.2`
+10. http `v0.0.1`
+11. nodemon `v3.0.1`
+12. path `v0.12.7`
+13. postcss-cli `v10.1.0`
+14. three `v0.156.1`
 
 ### Navigating the Website
 
@@ -61,8 +61,6 @@ Configurations were essential to creating the website, each
 configuration played specific role such as tailwindcss and 
 its utilities being tailwindcss/forms and tailwindcss/typography.
 
-1. @tailwindcss/forms - Responsible for creating forms and validation logic.
-2. @tailwindcss/typography - Responsible for creating typography and fonts configurations.
-3. @material-tailwind/html - UI for creating layouts, styles, and designs faster.
-
-Navigate to the `tailwindcss.config.js` 
+1. **@tailwindcss/forms** - Responsible for creating forms and validation logic.
+2. **@tailwindcss/typography** - Responsible for creating typography and fonts configurations.
+3. **@material-tailwind/html** - UI for creating layouts, styles, and designs faster.

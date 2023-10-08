@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <%- include('partials/head.ejs') %>
 </head>
+
 <body>
     <%- include('partials/nav.ejs') %>
-    <div class="container">
-        <h1>Hello From /contact!</h1>
-    </div>
-    <%- include('partials/footer.ejs') %>
-    <%- include('partials/scripts.ejs') %>
+        <!-- Contact Section -->
+        <section>
+            <div class="max-w-lg mx-auto p-8">
+
+                <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+
+                <form id="contact-form">
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="name">
+                            Name
+                        </label>
+
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="name" type="text" placeholder="John Doe">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="email">
+                            Email
+                        </label>
+
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email" type="email" placeholder="johndoe@example.com">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="phone" type="tel" placeholder="123456789">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-40 resize-none"
+                            id="message" placeholder="Your message..."></textarea>
+                    </div>
+
+                    <div>
+                        <button
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="submit">
+                            Send Message
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+        <%- include('partials/footer.ejs') %>
+            <%- include('partials/scripts.ejs') %>
 </body>
+
 </html>

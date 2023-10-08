@@ -6,6 +6,7 @@ module.exports = withMT({
   content: [
     './views/**/*.ejs',
     './public/**/*.html',
+    './routes/*',
   ],
   theme: {
     extend: { }

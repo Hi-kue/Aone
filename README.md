@@ -17,7 +17,7 @@ This is a personal portfolio website built with the following technologies:
 
 1. Clone the repository
 ```bash
-git clone PATH_TO_REPO
+git clone https://github.com/Hi-kue/Aone.git
 ```
 2. Install dependencies
 ```bash
@@ -31,7 +31,7 @@ npm start
 
 ## Project Structure
 
-```js
+```h
 .
 ├── config
 │   └── config.js
@@ -64,18 +64,10 @@ npm start
 ├── README.md
 └── tailwind.config.js
 ```
-
-## Priority TODO's
-- [ ] Create home page 
-- [ ] Create about page
-- [ ] Create projects page
-- [ ] Create contact page
-- [ ] Create services page
-- [ ] Create 404 page ✓
-
 ## Prerequisites and Todo's for Assignment
-- [ ] Configure config folder and `config.js` file with `app.js`
-- [ ] Configure and Update partials folder
-- [ ] Configure and Update views folder
+- [x] Configure config folder and `config.js` file with `app.js`
+- [x] Configure and Update partials folder
+- [x] Configure and Update views folder
 - [ ] Complete home page `/views/home.ejs`
-- [ ] Configure global css file `global.css`
+- [x] Configure global css file `tailwind.css`
+- [ ] Host Repository on Heroku or Render
