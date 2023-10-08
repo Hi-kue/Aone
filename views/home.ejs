@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+
+<body class="items-center">
+    <%- include('partials/nav.ejs') %>
+        <!-- Hero & Mission Statement -->
+        <section id="hero__content">
+            <div>
+                <!-- Hero Component-->
+                <%- include('partials/card.ejs', { text: 'Example' , content: 'Example' }) %>
+            </div>
+            <div>
+                <!-- Mission Statement -->
+            </div>
+        </section>
+
+        <!-- Reference to Other Pages -->
+        <section id="other__pages" class="flex justify-center items-center">
+            <div class="grid grid-cols-2 gap-4">
+                <a href="/about" class="block max-w-sm p-6 bg-white border-2 border-gray-200 rounded-lg shadow">
+                    <h5 class="mb-2 text-2xl tracking-tight">About Me</h5>
+                    <p class="mb-2 text-xs tracking-tight">
+                        Learn more about who I am as an individual, and
+                        as a developer; From the routes I took, to the languages I love to use.
+                    </p>
+                </a>
+                <a href="/projects" class="block max-w-sm p-6 bg-white border-2 border-gray-200 rounded-lg shadow">
+                    <h5 class="mb-2 text-2xl tracking-tight">Projects</h5>
+                    <p class="mb-2 text-xs tracking-tight">
+                        Learn more about the projects that I am making, have made, and continue to
+                        iterate through my journey as a developer.
+                    </p>
+                </a>
+                <a href="/services" class="block max-w-sm p-6 bg-white border-2 border-gray-200 rounded-lg shadow">
+                    <h5 class="mb-2 text-2xl tracking-tight">Services</h5>
+                    <p class="mb-2 text-xs tracking-tight">
+                        Learn more about the services that I offer, and what I am doing today with other projects.
+                    </p>
+                </a>
+                <a href="/contact" class="block max-w-sm p-6 bg-white border-2 border-gray-200 rounded-lg shadow">
+                    <h5 class="mb-2 text-2xl tracking-tight">Contact</h5>
+                    <p class="mb-2 text-xs tracking-tight">
+                        Get in touch with me, about basic inquiries or whatever else you would like to ask.
+                    </p>
+                </a>
+            </div>
+        </section>
+    <%- include('partials/footer.ejs') %>
+    <%- include('partials/scripts.ejs') %>
+</body>
+
+</html>

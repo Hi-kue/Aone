@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ranade Medium | Medium Italic */
+@font-face {
+    font-family: 'Ranade-Medium';
+    src: url('../fonts/Ranade-Medium.woff') format('woff2'),
+        url('../fonts/Ranade-Medium.woff') format('woff'),
+        url('../fonts/Ranade-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ranade-MediumItalic';
+    src: url('../fonts/Ranade-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Ranade-MediumItalic.woff') format('woff'),
+        url('../fonts/Ranade-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+/* Ranade Bold | Bold Italic */
+@font-face {
+    font-family: 'Ranade-Bold';
+    src: url('../fonts/Ranade-Bold.woff2') format('woff2'),
+        url('../fonts/Ranade-Bold.woff') format('woff'),
+        url('../fonts/Ranade-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Ranade-BoldItalic';
+    src: url('../fonts/Ranade-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Ranade-BoldItalic.woff') format('woff'),
+        url('../fonts/Ranade-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+/* Bespoke Serif Medium | Medium Italic */
+@font-face {
+    font-family: 'BespokeSerif-Medium';
+    src: url('../fonts/BespokeSerif-Medium.woff2') format('woff2'),
+        url('../fonts/BespokeSerif-Medium.woff') format('woff'),
+        url('../fonts/BespokeSerif-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'BespokeSerif-MediumItalic';
+    src: url('../fonts/BespokeSerif-MediumItalic.woff2') format('woff2'),
+        url('../fonts/BespokeSerif-MediumItalic.woff') format('woff'),
+        url('../fonts/BespokeSerif-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+/* Bespoke Regular */
+@font-face {
+    font-family: 'BespokeSerif-Regular';
+    src: url('../fonts/BespokeSerif-Regular.woff2') format('woff2'),
+        url('../fonts/BespokeSerif-Regular.woff') format('woff'),
+        url('../fonts/BespokeSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+/* Setting Base Configurations */
+@layer base {
+    *::before,
+    *::after,
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    h1 {
+        font-family: 'Ranade-Bold', serif;
+    }
+
+    h2 {
+        font-family: 'BespokeSerif-Medium', serif;
+    }
+
+    h3 {
+        font-family: 'Ranade-Medium', serif;
+    }
+
+    h4 {
+        font-family: 'Ranade-Medium', serif;
+    }
+
+    h5 {
+        font-family: 'Ranade-Medium', serif;
+    }
+
+    h6 {
+        font-family: 'Ranade-Medium', serif;
+    }
+
+    p {
+        font-family: 'BespokeSerif-Regular', serif;
+    }
+
+    #footer__a {
+        font-family: 'Ranade-Medium', serif;
+        color: #303e40;
+    }
+
+    #footer__a:hover {
+        color: #8fbbbc;
+        text-decoration: none; 
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+
+    #footer_icon {
+            fill: #8fbbbc;
+    }
+
+    .nav-item {
+        font-family: 'Ranade-Medium', serif;
+        color: #303e40;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 0.8em;
+    }
+
+    .nav-item:hover {
+        color: #8fbbbc;
+        text-decoration: none;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+}
