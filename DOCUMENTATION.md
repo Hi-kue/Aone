@@ -64,3 +64,7 @@ its utilities being tailwindcss/forms and tailwindcss/typography.
 1. **@tailwindcss/forms** - Responsible for creating forms and validation logic.
 2. **@tailwindcss/typography** - Responsible for creating typography and fonts configurations.
 3. **@material-tailwind/html** - UI for creating layouts, styles, and designs faster.
+
+
+### Process & Understanding the Environment
+

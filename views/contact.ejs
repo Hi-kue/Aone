@@ -11,6 +11,10 @@
         <section>
             <div class="max-w-lg mx-auto p-8">
                 <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+                <p class="text-gray-700 mb-6">
+                    Feel free to contact me with any questions or comments that you might have, I will try
+                    my best to get back to you as soon as possible.
+                </p>
                 <form id="contact-form">
                     <!-- Name -->
                     <div class="mb-4">
@@ -38,7 +42,7 @@
                         </label>
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="phone" type="tel" placeholder="123456789" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                            id="phone" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
                     <!-- Message Component -->
                     <div class="mb-4">
@@ -47,17 +51,21 @@
                         </label>
                         <textarea
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-40 resize-none"
-                            id="message" placeholder="Enter Your message..." pattern="^\w{1,10}$"></textarea>
+                            id="message" placeholder="Enter Your message..." pattern="^\w{10}$"></textarea>
                     </div>
                     <!--- Send Message Button -->
-                    <div>
-                        <button
-                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                            type="submit">
-                            Send Message
-                        </button>
-                    </div>
-
+                    <a href="" class="relative inline-block text-lg group">
+                        <span
+                            class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+                            <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                            <span
+                                class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+                            <span class="relative">Button Text</span>
+                        </span>
+                        <span
+                            class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+                            data-rounded="rounded-lg"></span>
+                    </a>
                 </form>
 
             </div>

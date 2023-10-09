@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <%- include('partials/head.ejs') %>
 </head>
+
 <body>
     <%- include('partials/nav.ejs') %>
-    <div class="container">
-        <h1>Hello From /services!</h1>
-    </div>
-    <%- include('partials/footer.ejs') %>
-    <%- include('partials/scripts.ejs') %>
+        <!-- Services Section -->
+        <section class="min-h-screen">
+            <div class="mx-auto max-w-2xl px-6 py-12">
+                <h2 class="text-3xl font-bold text-center mb-8">Services</h2>
+                <p class="text-xl text-blue-gray-500 mb-8">
+                    I provide the following services to clients:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold text-blue-gray-500 mb-4">Website Development</h2>
+                    <p class="text-gray-700">
+                        With experience in developing websites with astro, svelte, and react. I can
+                        build you website for a fixed cost and upmost customer satisfaction.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold text-blue-gray-500 mb-4">Figma Mock / Web Design</h2>
+                    <p class="text-gray-700">
+                        As a developer who loves to design UI/UX, I can create stunning designs and mocks
+                        for potential websites.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold text-blue-gray-500 mb-4">CLI/TUI Application Development</h2>
+                    <p class="text-gray-700">
+                        As someone who prefers using CLI's, TUI's, and other day to day applications for
+                        a specific use. I can provide any desired implementation of a specific customer need.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold text-blue-gray-500 mb-4">Admin Dashboard for Backends</h2>
+                    <p class="text-gray-700">
+                        Being someone who primarily prefers backend, I can design an admin dashboard suitable for any
+                        full stack website with monitoring.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <%- include('partials/footer.ejs') %>
+            <%- include('partials/scripts.ejs') %>
 </body>
+
 </html>
