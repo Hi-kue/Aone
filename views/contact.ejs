@@ -10,51 +10,46 @@
         <!-- Contact Section -->
         <section>
             <div class="max-w-lg mx-auto p-8">
-
                 <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
-
                 <form id="contact-form">
-
+                    <!-- Name -->
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="name">
                             Name
                         </label>
-
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="name" type="text" placeholder="John Doe">
+                            id="name" type="text" placeholder="Albert Einstein" required>
                     </div>
-
+                    <!-- Email -->
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="email">
                             Email
                         </label>
-
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="email" type="email" placeholder="johndoe@example.com">
+                            id="email" type="email" placeholder="alberteinstein@gmail.com"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     </div>
-
+                    <!-- Phone Number -->
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="phone">
                             Phone Number
                         </label>
-
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="phone" type="tel" placeholder="123456789">
+                            id="phone" type="tel" placeholder="123456789" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
                     </div>
-
+                    <!-- Message Component -->
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="message">
                             Message
                         </label>
-
                         <textarea
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-40 resize-none"
-                            id="message" placeholder="Your message..."></textarea>
+                            id="message" placeholder="Enter Your message..." pattern="^\w{1,10}$"></textarea>
                     </div>
-
+                    <!--- Send Message Button -->
                     <div>
                         <button
                             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
