@@ -8,17 +8,15 @@
 <body>
     <%- include('partials/nav.ejs') %>
         <!-- About Section -->
-        <section class="max-w-xl mx-auto p-8">
+        <section class="max-w-full mx-auto p-8">
             <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
 
             <!-- Date of Birth -->
-            <div class="flex flex-wrap justify-center items-center">
+            <div class="flex flex-row justify-center items-center">
+                <!-- DOB Stat Card -->
                 <div
-                    class="relative bg-white border-2 rounded-lg shadow-md border-blue-gray-500 transform transition duration-200 hover:scale-105">
-                    <div class="absolute top-3 right-3 rounded-full bg-violet-600 text-gray-200  w-10 h-10 text-center">
-                        6
-                    </div>
-                    <div class="px-10 pb-7 hover:text-blue-gray-400">
+                    class="mr-3 bg-white border-2 rounded-lg shadow-lg border-blue-gray-500 transform transition duration-200 hover:scale-105">
+                    <div class="px-5 pb-5 pt-1 hover:text-blue-gray-400">
                         <h5 class="text-blue-gray-900 font-semibold">
                             DOB
                         </h5>
@@ -26,6 +24,89 @@
                             March 25, 2004
                         </p>
                     </div>
+                </div>
+                <!-- Country Born Stat Card -->
+                <div
+                    class="mr-3 bg-white border-2 rounded-lg shadow-lg border-blue-gray-500 transform transition duration-200 hover:scale-105">
+                    <div class="px-5 pb-5 pt-1 hover:text-blue-gray-400">
+                        <h5 class="text-blue-gray-900 font-semibold">
+                            Born In
+                        </h5>
+                        <p class="antialiased text-gray-600 text-sm break-all">
+                            Pakistan
+                        </p>
+                    </div>
+                </div>
+                <!-- Age Stat Card -->
+                <div
+                    class="mr-3 bg-white border-2 rounded-lg shadow-lg border-blue-gray-500 transform transition duration-200 hover:scale-105">
+                    <div class="px-5 pb-5 pt-1 hover:text-blue-gray-400">
+                        <h5 class="text-blue-gray-900 font-semibold">
+                            Age
+                        </h5>
+                        <p class="antialiased text-gray-600 text-sm break-all">
+                            19
+                        </p>
+                    </div>
+                </div>
+                <!-- Fav Language Stat Card -->
+                <div
+                    class="mr-3 bg-white border-2 rounded-lg shadow-lg border-blue-gray-500 transform transition duration-200 hover:scale-105">
+                    <div class="px-5 pb-5 pt-1 hover:text-blue-gray-400">
+                        <h5 class="text-blue-gray-900 font-semibold">
+                            Fav Languages
+                        </h5>
+                        <p class="antialiased text-gray-600 text-sm break-all">
+                            C#, Go, Lua
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bio -->
+            <div class="flex flex-row justify-center items-center mt-10">
+                <!-- Information About Me -->
+                <div class="max-w-3xl mx-auto px-6">
+                    <h3 class="font-bold text-4xl tracking-tighter text-blue-gray-700">Who Am I?</h3>
+                    <p class="mt-4 mb-10 text-2xl text-blue-gray-400">
+                        Im an aspiring developer loves to learn new things; I primarily enjoy developing
+                        <a href="https://github.com/Hi-kue?tab=repositories"
+                            class="underline text-slate-900 decoration-blue-400 decoration-wavy">Fullstack
+                            Applications</a>,
+                        <a href="https://github.com/Hi-kue?tab=repositories"
+                            class="underline text-slate-900 decoration-blue-400 decoration-wavy">CLIs & TUIs</a>,
+                        and
+                        <a href="https://github.com/Hi-kue?tab=repositories"
+                            class="underline text-slate-900 decoration-blue-400 decoration-wavy">3D Assets w/Blender,
+                            ThreeJs, Spline3D</a>.
+                    </p>
+
+                    <h3 class="mt-5 font-bold text-4xl tracking-tighter text-blue-gray-700">What Are Some Interesting
+                        Things About Me?
+                    </h3>
+                    <p class="mt-4 mb-10 text-2xl text-blue-gray-400">
+                        Well, I'm very tech-savvy and love to create things with technology, I recently
+                        started my journey as a software engineer through Centennial College, but I was
+                        always interested in technology throughout highschool.
+                    </p>
+
+                    <h3 class="mt-5 font-bold text-4xl tracking-tighter text-blue-gray-700">What do I Idealize?</h3>
+                    <p class="mt-4 mb-10 text-2xl text-blue-gray-400">
+                        As someone who loves technology, I believe in an Ideal world were developers
+                        learn their craft to their own levels of perfection, and not just to get into
+                        the workforce and work for someone else's dream. After watching a lot of video's
+                        by ThePrimeagen, I've come to realize that I should consider software development
+                        as art that can be crafted through dedication and persistence.
+                    </p>
+
+
+                    <a href="/pdf/Resume.pdf" class="relative inline-block px-4 py-2 font-medium group mt-10" download>
+                        <span
+                            class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span
+                            class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                        <span class="relative text-black group-hover:text-white">Download Resume ✨</span>
+                    </a>
                 </div>
             </div>
         </section>
