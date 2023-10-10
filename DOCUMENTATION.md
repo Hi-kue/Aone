@@ -68,3 +68,10 @@ its utilities being tailwindcss/forms and tailwindcss/typography.
 
 ### Process & Understanding the Environment
 
+Under `config/config.js` you will find all the routes to each ejs page. This is also where
+most of the express route logic is handled alongside `app.js` which is used to listen to a 
+specific port and display the corresponding routes.
+
+`tailwind.config.js` contains most of the tailwind configurations required. Although there are more
+pre-set configurations under `public/css/tailwind.css` but those are only for specific styles that
+should be available by default.

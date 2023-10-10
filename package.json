@@ -5,7 +5,6 @@
   "main": "app.js",
   "scripts": {
     "start": "npm run tailwind:css && nodemon app.js",
-    "build": "npm run tailwind:build",
     "tailwind:build": "npm run tailwind:build && npm run nodemon app.js",
     "tailwind:css": "npx tailwindcss -i public/css/tailwind.css -o public/css/styles.css"
   },

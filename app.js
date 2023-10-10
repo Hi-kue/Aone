@@ -1,4 +1,4 @@
-const app = require('./config/config')
+const app = require('./config/config');
 const colors = require('colors');
 
 app.set('port', process.env.PORT || 3000);
